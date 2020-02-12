@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1004718062142",
+    "firebase_url": "https://mlife-mgblock.firebaseio.com",
+    "project_id": "mlife-mgblock",
+    "storage_bucket": "mlife-mgblock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004718062142:android:12fe55bb3f498189f82f6f",
+        "android_client_info": {
+          "package_name": "mlife.mgblock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004718062142-b7r5hrt5fko2k9he2vtt0dhfneb6v6n9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU_c7MhkFmLR1SHHX-kBjYF95cPWu81N0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004718062142-b7r5hrt5fko2k9he2vtt0dhfneb6v6n9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

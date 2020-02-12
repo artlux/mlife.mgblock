@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="mlife.mgblock" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Magnet Blocks</name>
+    <description>
+      Magnet Blocks
+    </description>
+    <author email="kalinkovichi@yandex.by" href="https://mlife-media.by">Andrew Zahalski</author>
+	<content src="index.html" />
+	
+<plugin name="cordova-plugin-whitelist" spec="~1.3.4" />
+<plugin name="cordova-plugin-device" spec="~2.0.3" />
+<plugin name="cordova-plugin-network-information" spec="~2.0.2" />
+<plugin name="cordova-plugin-geolocation" spec="~4.0.2" />
+<plugin name="cordova-plugin-inappbrowser" spec="~3.1.0" />
+<plugin name="cordova-plugin-splashscreen" spec="~5.0.3"/>
+<plugin name="cordova-plugin-insomnia" spec="~4.3.0"/>
+<plugin name="phonegap-plugin-push" spec="~2.2.3">
+	<variable name="FCM_VERSION" value="17.3.3" />
+</plugin>
+
+<plugin name="cordova-play-services-version-adapter" spec="~1.0.2"/>
+<plugin name="cordova-admob-sdk" spec="~0.24.1">
+	<variable name="PLAY_SERVICES_VERSION" value="16.0.0" />
+</plugin>
+
+<platform name="android">
+	<plugin name="cordova-plugin-admob-free" spec="~0.27.0">
+		<variable name="ADMOB_APP_ID" value="ca-app-pub-1830389177579766~7040095382" />
+	</plugin>
+	<plugin name="cordova-plugin-purchase" spec="~10.0.1">
+		<variable name="BILLING_KEY" value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhYuBnfxg56n4QqDWMQZx2aetEpuNb2pGb9a4Ae/GDf8qZlaw7eKnU178fPTK5VoKQDNKgZ9MFO7MpscGbLksj2uHcV8KK1iutLrj5g8YG63IiIUqUVXSZELO4wHpvwZ2bpxxnDprHdifuGFv3ivkZNSP5p69/DKQKOls0I0YVIM9KJAgT/T+AzGVLNdB4JxZYa98YXphcH3sYRO9NBt1LbSxyMrj3I4Kzft8HgNjyKTpfH3KV/YqjZYSp4Vu1BB9A4aYa26hOI/fg9ZaCP1sBM3E559zACUr5vz/JTRVv/RQyb9OFA/HQnCyitfY9X7qxUdnP3DEcT9fMWQ+DZju3QIDAQAB" />
+	</plugin>
+</platform>
+<platform name="ios">
+	<plugin name="cordova-plugin-firebase-analytics" spec="~3.0.0"></plugin>
+	<plugin name="cordova-plugin-admob-free" spec="~0.27.0">
+		<variable name="ADMOB_APP_ID" value="ca-app-pub-1830389177579766~7920731162" />
+	</plugin>
+</platform>
+
+<access origin="*" />
+<allow-intent href="http://*/*" />
+<allow-intent href="https://*/*" />
+<allow-intent href="tel:*" />
+<allow-intent href="sms:*" />
+<allow-intent href="mailto:*" />
+<allow-intent href="geo:*" />
+<allow-intent href="data:*" />
+<allow-intent href="*" />
+<allow-navigation href="*" />
+<preference name="phonegap-version" value="cli-9.0.0" />
+<preference name="ShowSplashScreenSpinner" value="false"/>
+<preference name="SplashShowOnlyFirstTime" value="false"/>
+<preference name="AutoHideSplashScreen" value="false" />
+<preference name="SplashScreenDelay" value="6000" />
+<preference name="orientation" value="portrait" />
+<icon src="icon.png" />
+<splash src="splash.png"/>
+
+    <platform name="android">
+		<preference name="android-build-tool" value="gradle" />
+		<preference name="AndroidPersistentFileLocation" value="Compatibility" />
+		<resource-file src="google-services.json" target="app/google-services.json" />
+		<allow-intent href="market:*" />
+		<preference name="android-minSdkVersion" value="19" />
+		<preference name="SplashMaintainAspectRatio" value="true" />
+		<splash src="splash.png"/>
+		<icon src="res/android/ldpi.png" density="ldpi" />
+        <icon src="res/android/mdpi.png" density="mdpi" />
+        <icon src="res/android/hdpi.png" density="hdpi" />
+        <icon src="res/android/xhdpi.png" density="xhdpi" />
+        <icon src="res/android/xxhdpi.png" density="xxhdpi" />
+        <icon src="res/android/xxxhdpi.png" density="xxxhdpi" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="GADIsAdManagerApp" platform="ios" target="*-Info.plist">
+            <true />
+        </config-file> 
+		<resource-file src="GoogleService-Info.plist" />
+		<preference name="DisallowOverscroll" value="true" />
+		<preference name="iosPersistentFileLocation" value="Library" />
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+		
+		<splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
+		<splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
+		<splash src="res/screen/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
+		<splash src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
+		<splash src="res/screen/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
+		<splash src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
+		<splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
+		<splash src="res/screen/ios/Default-667h.png" width="750" height="1334"/>
+		<splash src="res/screen/ios/Default-736h.png" width="1242" height="2208"/>
+		<icon src="res/ios/icon-60@3x.png" width="180" height="180" />
+		<icon src="res/ios/icon-60.png" width="60" height="60" />
+		<icon src="res/ios/icon-60@2x.png" width="120" height="120" />
+		<icon src="res/ios/icon-76.png" width="76" height="76" />
+		<icon src="res/ios/icon-76@2x.png" width="152" height="152" />
+		<icon src="res/ios/icon-40.png" width="40" height="40" />
+		<icon src="res/ios/icon-40@2x.png" width="80" height="80" />
+		<icon src="res/ios/icon.png" width="57" height="57" />
+		<icon src="res/ios/icon@2x.png" width="114" height="114" />
+		<icon src="res/ios/icon-72.png" width="72" height="72" />
+		<icon src="res/ios/icon-72@2x.png" width="144" height="144" />
+		<icon src="res/ios/icon-small.png" width="29" height="29" />
+		<icon src="res/ios/icon-small@2x.png" width="58" height="58" />
+		<icon src="res/ios/icon-50.png" width="50" height="50" />
+		<icon src="res/ios/icon-50@2x.png" width="100" height="100" />
+		<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+			<string>приложение хотело бы использовать примерное местоположение для показа более релевантной рекламы</string>
+		</edit-config>
+		<edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">
+			<string>приложение хотело бы использовать примерное местоположение для показа более релевантной рекламы</string>
+		</edit-config>
+		<edit-config target="NSBluetoothAlwaysUsageDescription" file="*-Info.plist" mode="merge">
+			<string>приложение хотело бы использовать ваш Bluetooth для связи</string>
+		</edit-config>
+    </platform>
+</widget>
